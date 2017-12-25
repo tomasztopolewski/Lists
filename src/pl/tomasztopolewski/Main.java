@@ -1,4 +1,4 @@
-package com.tomasztopolewski;
+package pl.tomasztopolewski;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class Main extends Application {
     public static String version = "0.0.010";
     public static String typeVersion = "pre-DEV";
     public static String author = "Tomasz Topolewski";
-    
+
 
     @Override
     public void start(Stage primaryStage) throws Exception{

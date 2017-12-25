@@ -1,4 +1,4 @@
-package com.tomasztopolewski;
+package pl.tomasztopolewski;
 
 import javafx.fxml.Initializable;
 
