@@ -1,5 +1,4 @@
 *.iml
 .idea/
 out/
-!version.docx
 *.docx
