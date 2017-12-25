@@ -8,16 +8,21 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     public static String name = "Lists";
-    public static String version = "0.0.010";
+    public static String version = "0.0.120";
     public static String typeVersion = "pre-DEV";
     public static String author = "Tomasz Topolewski";
+    public static String yearStart = "2017";
 
 
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-        primaryStage.setTitle(name + " v" + version + typeVersion + " by " + author);
-        primaryStage.setScene(new Scene(root, ControllerMain.widthMain, ControllerMain.heightMain));
+        primaryStage.setTitle(name + " v" + version + typeVersion);
+
+        Scene primaryScene = new Scene(root, ControllerMain.widthMain, ControllerMain.heightMain);
+        primaryStage.setScene(primaryScene);
+
+        primaryScene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
         primaryStage.setResizable(false);
         primaryStage.sizeToScene();
         primaryStage.show();

@@ -1,0 +1,9 @@
+/*.tool-bar {
+    -fx-background-color: #FFFFFF;
+}*/
+
+#labelFooter {
+    -fx-font-size: 10;
+    -fx-alignment: center;
+    -fx-opacity: 30%;
+}
