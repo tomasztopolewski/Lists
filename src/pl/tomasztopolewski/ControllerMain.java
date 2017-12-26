@@ -3,6 +3,7 @@ package pl.tomasztopolewski;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
 import java.net.URL;
@@ -52,7 +53,9 @@ public class ControllerMain implements Initializable {
 
 
     @FXML
-    Pane paneLists;
+    public Pane paneLists;
+    @FXML
+    public GridPane gridPaneLists;
 
 
     @FXML
@@ -64,6 +67,10 @@ public class ControllerMain implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         labelFooter.setText(Main.name + " v" + Main.version + Main.typeVersion + " by " + Main.author + " " + Main.yearStart);
 
+    }
+
+    public void createGrindPaneLists() {
+        gridPaneLists = new GridPane();
     }
 
 }

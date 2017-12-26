@@ -27,6 +27,12 @@
 + Powiększono przestrzeń notatek do 3 rzędów
 + Korekta layout'u
 
+26/12/17 (21:42 CET) - 0.0.450pre-DEV
+[0.0.450pre-DEV]
++ Dodano zapisy uruchomień programu i powodu uruchomienia
++ Poprawiono layout
++ Dodano algorytm sprawdzający poprawność instalacji programu
++ Dodano klasę 'TestMain' służącą testowaniu pojedyńczych opcji programu
 
 ----------------------------------------------------------------------------------
 **********************************************************************************
