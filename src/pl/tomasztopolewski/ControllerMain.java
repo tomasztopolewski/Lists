@@ -9,7 +9,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class ControllerMain implements Initializable {
-    public static double heightMain = 600.0, widthMain = 1000.0;
+    public static double heightMain = 722.0, widthMain = 1000.0;
 
 
     @FXML
