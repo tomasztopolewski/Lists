@@ -10,9 +10,17 @@
 [0.0.010-pre-DEV] 
 + Dodane pliki konfiguracyjne środowiska IntelliJ IDEA
 
-25/12/17 (23:18 CET) - 0.0.120-pre-DEV
-[0.0.120-pre-DEV] 	
+25/12/17 (23:18 CET) - 0.0.120pre-DEV
+[0.0.120pre-DEV]
 + Stworzono podstawowy layout programu
+
+26/12/17 (17:30 CET) - 0.0.310pre-DEV
+[0.0.310pre-DEV]
++ Wyrównano i poprawiono layout
++ Dodano kaskadowy arkusz stylów dla okna głównego modyfikując wyglądy
+  poszczególnych części okna main
++ Stworzono podstawową strukturę dla back-end umieszcznoną w pakecie
+  'lists': 'List' i 'Manager'
 
 ----------------------------------------------------------------------------------
 **********************************************************************************

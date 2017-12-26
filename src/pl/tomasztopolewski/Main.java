@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     public static String name = "Lists";
-    public static String version = "0.0.120";
+    public static String version = "0.0.310";
     public static String typeVersion = "pre-DEV";
     public static String author = "Tomasz Topolewski";
     public static String yearStart = "2017";

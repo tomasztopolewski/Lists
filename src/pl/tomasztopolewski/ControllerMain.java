@@ -2,10 +2,7 @@ package pl.tomasztopolewski;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.ToolBar;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 
 import java.net.URL;
@@ -14,15 +11,54 @@ import java.util.ResourceBundle;
 public class ControllerMain implements Initializable {
     public static double heightMain = 600.0, widthMain = 1000.0;
 
-    @FXML
-    MenuBar menuBar;
-    @FXML
-    Label labelFooter;
-    @FXML
-    ToolBar toolBar;
 
     @FXML
-    Button newList;
+    MenuBar menuBar;
+
+    @FXML
+    Menu menuProgram;
+    @FXML
+    MenuItem config;
+    @FXML
+    MenuItem syncing;
+    @FXML
+    MenuItem exit;
+
+    @FXML
+    Menu menuLists;
+    @FXML
+    MenuItem newListMenuBar;
+    @FXML
+    MenuItem editList;
+    @FXML
+    MenuItem joinLists;
+    @FXML
+    MenuItem deleteList;
+
+    @FXML
+    Menu menuHelp;
+    @FXML
+    MenuItem aboutProgram;
+    @FXML
+    MenuItem help;
+
+
+    @FXML
+    ToolBar toolBar;
+    @FXML
+    Button newListToolBar;
+    @FXML
+    Button sync;
+
+
+    @FXML
+    Pane paneLists;
+
+
+    @FXML
+    Label labelFooter;
+
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
