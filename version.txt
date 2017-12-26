@@ -34,6 +34,11 @@
 + Dodano algorytm sprawdzający poprawność instalacji programu
 + Dodano klasę 'TestMain' służącą testowaniu pojedyńczych opcji programu
 
+26/12/17 (22:46 CET) - 0.0.490pre-DEV
+[0.0.490pre-DEV]
++ Zmieniono nazwę 'TestMain' na 'TestMainConsole'
++ Dodano klasę VBoxList wizualizującą jedną notatkę
+
 ----------------------------------------------------------------------------------
 **********************************************************************************
 ----------------------------------------------------------------------------------

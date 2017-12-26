@@ -36,6 +36,11 @@ public class Main extends Application {
             primaryStage.setResizable(false);
             primaryStage.sizeToScene();
             primaryStage.show();
+
+            ControllerMain.createGrindPaneLists();
+            primaryStage.setResizable(false);
+            primaryStage.sizeToScene();
+            primaryStage.show();
         } else {
             //kod dla niewłaściwej instalacji aplikacji
         }

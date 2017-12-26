@@ -5,6 +5,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import pl.tomasztopolewski.lists.List;
+import pl.tomasztopolewski.lists.VBoxList;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -54,8 +56,8 @@ public class ControllerMain implements Initializable {
 
     @FXML
     public Pane paneLists;
-    @FXML
-    public GridPane gridPaneLists;
+    //@FXML
+    public GridPane gridPaneLists = new GridPane();
 
 
     @FXML
@@ -66,11 +68,16 @@ public class ControllerMain implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         labelFooter.setText(Main.name + " v" + Main.version + Main.typeVersion + " by " + Main.author + " " + Main.yearStart);
-
     }
 
-    public void createGrindPaneLists() {
-        gridPaneLists = new GridPane();
+
+    public GridPane getGridPaneLists() {
+        return gridPaneLists;
+    }
+
+    public static void createGrindPaneLists() {
+        //gridPaneLists = new GridPane();
+        //gridPaneLists.add(new VBoxList().getVBoxList(new List("Tomasz Topolewski", "26/12/2017 22:23", "Super jestem i nikt nie zaprzeczy."), 200, 200), 0, 0);
     }
 
 }
