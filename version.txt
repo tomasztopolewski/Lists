@@ -39,6 +39,18 @@
 + Zmieniono nazwę 'TestMain' na 'TestMainConsole'
 + Dodano klasę VBoxList wizualizującą jedną notatkę
 
+27/12/17 (19:11) - 0.00.600pre-DEV
+[0.00.600pre-DEV]
++ Utworzono klasę Main oraz klasę MainFXML:
+  Klasa Main odpowiada za funkcjonowanie programu tworzonego na interfejsie
+  wewnętrznie. Klasa MainFXML tworzy interfejs na podstawie pliku FXML.
++ Klasa Main tworzy interfejs wewntrzenie: instrukucje i generowanie
+  preferencji
++ Klasa Main jako domyślana, zawiera stałe z podstawowymi informacjamoi
++ Poprawki w Logs
++ Utworzenie plików CSS dla main, mainFXML, toolBar.
+
+
 ----------------------------------------------------------------------------------
 **********************************************************************************
 ----------------------------------------------------------------------------------

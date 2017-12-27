@@ -1,0 +1,30 @@
+/*********************************************************/
+/**********           toolBar.css            ************/
+/**********         27-12-2017 13:53        ************/
+/*****************************************************/
+
+.tool-bar {
+    -fx-background-color: rgb(244, 244, 244);
+}
+
+.button {
+    -fx-pref-height: 25px;
+    -fx-pref-width: 100px;
+    /*-fx-background-color: rgb(219, 219, 219);*/
+    -fx-background-color: rgb(234, 234, 234);
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: rgb(184, 184, 184);
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: rgb(184, 184, 184);
+}
+
+
+
+  /********************************/
+ /*	      Tomasz Topolewski      */
+/********************************/
