@@ -14,6 +14,7 @@
 [0.0.120pre-DEV]
 + Stworzono podstawowy layout programu
 
+
 26/12/17 (17:30 CET) - 0.0.310pre-DEV
 [0.0.310pre-DEV]
 + Wyrównano i poprawiono layout
@@ -39,6 +40,7 @@
 + Zmieniono nazwę 'TestMain' na 'TestMainConsole'
 + Dodano klasę VBoxList wizualizującą jedną notatkę
 
+
 27/12/17 (19:11) - 0.00.600pre-DEV
 [0.00.600pre-DEV]
 + Utworzono klasę Main oraz klasę MainFXML:
@@ -48,8 +50,14 @@
   preferencji
 + Klasa Main jako domyślana, zawiera stałe z podstawowymi informacjamoi
 + Poprawki w Logs
-+ Utworzenie plików CSS dla main, mainFXML, toolBar.
++ Utworzenie plików CSS dla main, mainFXML, toolBar
 
+27/12/17 (22:56) - 0.00.610pre-DEV
+[0.00.610pre-DEV]
++ Przeniesiono wszystkie pliki CSS do oddzielnego katalogu css/
++ Utworzono plik CSS dla labelFooter o nazwie labelFooter.css
++ Stworzono i wyprofilowano elementy paneLists i labelFooter, kończąc
+  prace nad głównymi elementami layout'u
 
 ----------------------------------------------------------------------------------
 **********************************************************************************

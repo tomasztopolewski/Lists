@@ -10,9 +10,7 @@ import pl.tomasztopolewski.preparation.Installation;
 
 import java.io.IOException;
 
-import static pl.tomasztopolewski.Main.NAME;
-import static pl.tomasztopolewski.Main.TYPE_VERSION;
-import static pl.tomasztopolewski.Main.VERSION;
+import static pl.tomasztopolewski.Main.*;
 
 public class MainFXML extends Application {
 
@@ -27,10 +25,10 @@ public class MainFXML extends Application {
             root = FXMLLoader.load(getClass().getResource("main.fxml"));
             primaryStage.setTitle(NAME + " v" + VERSION + TYPE_VERSION);
 
-            Scene primaryScene = new Scene(root, ControllerMain.WIDTH_MAIN, ControllerMain.HEIGHT_MAIN);
+            Scene primaryScene = new Scene(root, WIDTH_MAIN, HEIGHT_MAIN);
             primaryStage.setScene(primaryScene);
 
-            primaryScene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
+            primaryScene.getStylesheets().add(getClass().getResource("css/main.css").toExternalForm());
             primaryStage.setResizable(false);
             primaryStage.sizeToScene();
             primaryStage.show();

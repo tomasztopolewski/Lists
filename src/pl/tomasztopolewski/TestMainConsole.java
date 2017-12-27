@@ -11,5 +11,9 @@ public abstract class TestMainConsole {
        new Logs().appendEnd("end");
     }
     */
-    public static void main(String[] args) {}
+    public static void main(String[] args) throws IOException {
+        new Logs().appendStart("TestMainConsole starts");
+        new Logs().appendReason();
+        new Logs().appendEnd("end.");
+    }
 }

@@ -14,11 +14,10 @@ import static pl.tomasztopolewski.Main.TYPE_VERSION;
 import static pl.tomasztopolewski.Main.VERSION;
 import static pl.tomasztopolewski.Main.AUTHOR;
 import static pl.tomasztopolewski.Main.YEAR_START;
+import static pl.tomasztopolewski.Main.HEIGHT_MAIN;
+import static pl.tomasztopolewski.Main.WIDTH_MAIN;
 
 public class ControllerMain implements Initializable {
-    public final static double HEIGHT_MAIN = 722.0, WIDTH_MAIN = 1000.0;
-
-
     @FXML
     MenuBar menuBar;
 
