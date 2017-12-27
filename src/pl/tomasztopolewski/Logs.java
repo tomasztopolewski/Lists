@@ -22,11 +22,14 @@ public class Logs {
         BufferedReader reader = new BufferedReader(new FileReader(pathToTheFolder + nameFile));
         while ((line = reader.readLine()) != null) lastLine = line;
 
-        String[] s = lastLine.split(Pattern.quote(")"));
-
+        if (lastLine != "" && lastLine != null) {
+            String[] s = lastLine.split(Pattern.quote(")"));
+            if (s.length > 0) this.numerator = Integer.parseInt(s[0]);
+            else this.numerator = 0;
+        } else {
+            this.numerator = 0;
+        }
         //System.out.println("s[0]: " + s);
-        if (s.length > 0) this.numerator = Integer.parseInt(s[0]);
-        else this.numerator = 0;
     }
 
 

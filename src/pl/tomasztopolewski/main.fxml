@@ -24,7 +24,7 @@
                   <MenuItem fx:id="config" mnemonicParsing="false" text="Konfiguracja" />
                   <CheckMenuItem fx:id="syncing" disable="true" mnemonicParsing="false" selected="false" text="Synchronizacja" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                <MenuItem fx:id="exit" mnemonicParsing="false" text="Wyjdź" />
+                <MenuItem fx:id="exit" mnemonicParsing="false" text="Zamknij program" />
               </items>
             </Menu>
             <Menu fx:id="menuLists" mnemonicParsing="false" text="Notatki">

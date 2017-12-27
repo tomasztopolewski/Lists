@@ -5,14 +5,18 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
-import pl.tomasztopolewski.lists.List;
-import pl.tomasztopolewski.lists.VBoxList;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static pl.tomasztopolewski.Main.NAME;
+import static pl.tomasztopolewski.Main.TYPE_VERSION;
+import static pl.tomasztopolewski.Main.VERSION;
+import static pl.tomasztopolewski.Main.AUTHOR;
+import static pl.tomasztopolewski.Main.YEAR_START;
+
 public class ControllerMain implements Initializable {
-    public static double heightMain = 722.0, widthMain = 1000.0;
+    public final static double HEIGHT_MAIN = 722.0, WIDTH_MAIN = 1000.0;
 
 
     @FXML
@@ -67,7 +71,7 @@ public class ControllerMain implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        labelFooter.setText(Main.name + " v" + Main.version + Main.typeVersion + " by " + Main.author + " " + Main.yearStart);
+        labelFooter.setText(NAME + " v" + VERSION + TYPE_VERSION + " by " + AUTHOR + " " + YEAR_START);
     }
 
 
