@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="722.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.tomasztopolewski.ControllerMain">
+   <children>
+
+
+      <MenuBar fx:id="menuBar" prefWidth="1000.0">
+         <menus>
+            <Menu fx:id="menuProgram" mnemonicParsing="false" text="Program">
+              <items>
+                  <MenuItem fx:id="config" mnemonicParsing="false" text="Konfiguracja" />
+                  <CheckMenuItem fx:id="syncing" disable="true" mnemonicParsing="false" selected="false" text="Synchronizacja" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                <MenuItem fx:id="exit" mnemonicParsing="false" text="Zamknij program" />
+              </items>
+            </Menu>
+            <Menu fx:id="menuLists" mnemonicParsing="false" text="Notatki">
+               <items>
+                  <MenuItem fx:id="newListMenuBar" mnemonicParsing="false" text="Nowa notatka" />
+                  <MenuItem fx:id="editList" mnemonicParsing="false" text="Edytuj notatkę" />
+                  <MenuItem fx:id="joinLists" disable="true" mnemonicParsing="false" text="Połącz notatki" />
+                  <MenuItem fx:id="deleteList" mnemonicParsing="false" text="Usuń notatkę" />
+               </items>
+            </Menu>
+            <Menu fx:id="menuHelp" mnemonicParsing="false" text="Pomoc">
+               <items>
+                  <MenuItem fx:id="aboutProgram" mnemonicParsing="false" text="O programie" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="help" mnemonicParsing="false" text="Pomoc" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+
+
+      <ToolBar fx:id="toolBar" layoutY="27.0" prefHeight="40.0" prefWidth="1000.0">
+         <items>
+            <Button fx:id="newListToolBar" mnemonicParsing="false" text="Nowa notatka" />
+            <Button fx:id="sync" mnemonicParsing="false" text="Synchronizuj" />
+            <!-- <Separator orientation="VERTICAL" prefHeight="0.0" prefWidth="0.0" /> -->
+         </items>
+      </ToolBar>
+
+
+      <Pane fx:id="paneLists" layoutX="20.0" layoutY="82.0" prefHeight="600.0" prefWidth="960.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="320.0" />
+            <VBox layoutX="320.0" prefHeight="600.0" prefWidth="320.0" />
+            <VBox layoutX="640.0" prefHeight="600.0" prefWidth="320.0" />
+         </children>
+
+      </Pane>
+      <Label fx:id="labelFooter" layoutX="0" layoutY="697.0" prefHeight="25.0" prefWidth="1000.0" />
+   </children>
+</Pane>

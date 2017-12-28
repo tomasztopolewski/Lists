@@ -2,8 +2,14 @@ package pl.tomasztopolewski;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.layout.Background;
+import javafx.scene.control.CheckMenuItem;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.ToolBar;
+import javafx.scene.control.Button;
+import javafx.scene.control.SeparatorMenuItem;
+import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -13,7 +19,7 @@ import java.io.IOException;
 
 public class Main extends Application {
     public final static String NAME = "Lists";
-    public final static String VERSION = "0.00.610";
+    public final static String VERSION = "0.00.620";
     public final static String TYPE_VERSION = "pre-DEV";
     public final static String AUTHOR = "Tomasz Topolewski";
     public final static String YEAR_START = "2017";
@@ -39,7 +45,6 @@ public class Main extends Application {
     MenuItem aboutProgram = new MenuItem();
     MenuItem help = new MenuItem();
 
-
     ToolBar toolBar = new ToolBar();
     Button newListToolBar = new Button();
     Button sync = new Button();
@@ -47,7 +52,6 @@ public class Main extends Application {
 
     Pane paneLists = new Pane();
     GridPane gridPaneLists = new GridPane();
-
 
     Label labelFooter = new Label();
 
@@ -81,6 +85,7 @@ public class Main extends Application {
         launch(args);
         new Logs().appendEnd("end of testing.");
     }
+
 
     private void createLayout() {
         /////////////////////////////////////////////////////////////////////////////////////////
