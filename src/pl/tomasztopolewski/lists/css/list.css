@@ -1,0 +1,31 @@
+/*********************************************************/
+/**********             list.css             ************/
+/**********           wewnętrzny             ***********/
+/**********        29-12-2017 22:25        ************/
+/*****************************************************/
+
+/*#list {
+    -fx-background-color: rgb(249, 249, 249);
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: rgb(184, 184, 184);
+    -fx-border-radius: 5px;
+}*/
+
+.button {
+    -fx-pref-height: 27px;
+    -fx-pref-width: 27px;
+    /*-fx-background-color: rgb(219, 219, 219);*/
+    -fx-background-color: rgb(234, 234, 234);
+    -fx-font-weight: bold;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: rgb(184, 184, 184);
+    -fx-border-radius: 5px;
+}
+
+
+
+   /********************************/
+ /*	      Tomasz Topolewski      */
+/********************************/

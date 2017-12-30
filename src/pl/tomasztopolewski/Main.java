@@ -10,10 +10,7 @@ import javafx.scene.control.ToolBar;
 import javafx.scene.control.Button;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import pl.tomasztopolewski.lists.List;
 import pl.tomasztopolewski.lists.ListLayout;
@@ -23,7 +20,7 @@ import java.io.IOException;
 
 public class Main extends Application {
     public final static String NAME = "Lists";
-    public final static String VERSION = "0.00.800";
+    public final static String VERSION = "0.00.810";
     public final static String TYPE_VERSION = "pre-DEV";
     public final static String AUTHOR = "Tomasz Topolewski";
     public final static String YEAR_START = "2017";
@@ -153,14 +150,19 @@ public class Main extends Application {
         paneLists.setPrefSize(960.0, 600.0);
         paneLists.setLayoutX(20.0); paneLists.setLayoutY(82.0);
         //paneLists.setStyle("-fx-background-color:rgb(0, 0, 0)");
+        //paneLists.getStylesheets().add(getClass().getResource("list/css/list.css").toExternalForm());
 
 
+        columnList1.setSpacing(200);
         columnList1.setPrefSize(paneLists.getWidth()/3, paneLists.getHeight()/3);
         columnList1.setLayoutX(0); columnList1.setLayoutY(0);
+        columnList1.getStylesheets().add(getClass().getResource("css/list.css").toExternalForm());
 
         ListLayout list1 = new ListLayout(new List("Tomasz Topolewski", "24/06/2015 14:56", "Tomasz jest super gość i nie zaprzeczysz, że tak nie jest jak tak jest i tyle."));
         ListLayout list2 = new ListLayout(new List("Olaf Topolewski", "25/04/2018 23:08", "Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię stracił. Dziś piękność zda się obie Tadeusz Telimenie, lecz go i w grób się zdołał. Prostym ludziom wokanda zda się rumieniec oblekły. Tadeusz, chociaż w klasztorze. Ciszę przerywał ale szerzej niż myśliwi młodzi tak piękny i bawi się zadziwił lecz podmurowany. Świeciły się chce rozbierać. Woźny powiadał, że zdradza! Taka była ekonomowi poczciwemu świętą. Bo nie biegł sług swoich, a pani Telimena mieszkała przed którego posiadaniem pan Podkomorzy i knieje więc i trudno zaradzić wolał gości Żydom do afektów i każdy po stole i sejmiku bo tak to mówiąc, że przymiotów jego upadkiem domy i Hrabia chciał wiedzieć, skąd są, z parkanu na Ojczyzny łono. Tymczasem na lewo, on znowu w zamkowej sieni siadł pomiędzy nim i długo dumał, nim i Hrabia ma żądło w francuskiej gazecie. Podczaszyc, mimo równość, wziął najbliższą sobie. Podkomorzanki na szalach żebyśmy nasz ciężar poznali musim kogoś posadzić na dzień powszedni. Nóżek, choć zawsze daleko! Tak każe u Niemna brzegów."));
 
+        //columnList1.setVgrow(list1.getList(), Priority.ALWAYS);
+        //columnList1.setVgrow(list2.getList(), Priority.ALWAYS);
         columnList1.getChildren().addAll(list1.getList(), list2.getList());
         paneLists.getChildren().add(columnList1);
 
